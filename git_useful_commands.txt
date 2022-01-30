@@ -66,6 +66,14 @@ Untracked files:
 ----------------------------------------------------------
 git rm --cached file1.txt
 
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git rm --cached -r .
+rm 'file1.txt'
+rm 'file2.txt'
+rm 'file3.txt'
+rm 'file6.txt'
+rm 'git_useful_commands.txt'
+
 --Completely remove the files(it will delete the file)
 ----------------------------------------------------------
 git rm --f file1.txt
@@ -295,11 +303,12 @@ git branch -D branch_name
 
 
 
---revert the changes
+--revert the changes(on the file updated and revert back from latest committed source. happening in local)
 -----------------------------------------------------------------------------------------------------------
 git checkout file1.txt
 
 vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
 $ git checkout file1.txt
 Updated 1 path from the index
+
 
