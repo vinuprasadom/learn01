@@ -25,6 +25,12 @@ git diff --> It will show the latest changes done compared to previously committ
 fork --> Clone someone's remote repo to our remote repo and make changes in our remote repo. We can also send a pull request to original author to include our changes. 
 		 Original author can login to their remote repor and approve or suggest or comment on our changes and if approved changes can be merged in origina autjor's repo.
 
+Git clone creates a copy of the code in your local machine.
+
+Git fetch , fetches code from git to your local repository but will not update it. Once Git merge is executed the code is updated.
+
+Git pull is a (clone(download) + merge) operation and mostly used when you are working as teamwork. In other words, when you want the recent changes in that project, you can pull.
+
 ------------------------------------------------------------------------------------------------------------------
 --Working Directory --> Staging Area --> Local Reporsitory (local Git repository) --> Remote Repository (Git hub)
 ------------------------------------------------------------------------------------------------------------------
