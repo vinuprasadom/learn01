@@ -1,3 +1,31 @@
+.gitignore --> File with exception file list(should not add or commit, like secret/password/API key files)
+git status --> Shows status
+git log --> Shows the log corresponding to a git repo
+git add . --> add all files (modified/new etc) to staging for committing
+git add file1 file2 --> add specific files to staging for committing
+git rm --cached file1 --> remove the added file from staging from staging
+git rm --force file1 --> delete the file permanently
+git commit -m "add files" --> commit the changes to local repo
+git remote add origin https://testrepo.git --> add a remote origin in local repo
+git push -u origin main --> push the changes from local repo to remote repo origin
+git config user.name "Vinuprasad" --> set the git config with user name
+git config user.email "vinuprasad@test.com" --> set the git config with user email
+git config --global user.name "Vinuprasad" --> set the git config with user name globally 
+git config --global user.email "vinuprasad@test.com" --> set the git config with user email globally
+git checkout file1 --> revert changes done to file1 from previously committed
+git clone https://github.com/londonappbrewery/TinDog-Start.git  --> it will clone some one else remote repository clonned in local folder (repo)
+git branch --> show the list of all branches for the git repo and currently active one with *
+git branch branch01 --> Create new branch01
+git checkout branch01 --> Point the branch to branch01
+git checkout main --> Point the branch to main/master
+git branch -D branch_name --> Delete the branch
+git merge branch01 --> merge the changes from branch01 to current branch
+git diff --> It will show the latest changes done compared to previously committed changes.
+
+fork --> Clone someone's remote repo to our remote repo and make changes in our remote repo. We can also send a pull request to original author to include our changes. 
+		 Original author can login to their remote repor and approve or suggest or comment on our changes and if approved changes can be merged in origina autjor's repo.
+
+------------------------------------------------------------------------------------------------------------------
 --Working Directory --> Staging Area --> Local Reporsitory (local Git repository) --> Remote Repository (Git hub)
 ------------------------------------------------------------------------------------------------------------------
 
@@ -691,3 +719,62 @@ remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
 To https://github.com/vinuprasadom/learn01.git
    659a297..84a1007  main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+
+
+--git diff
+-------------------------------------------------------------------------------------------------------------
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git_useful_commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git branch
+  branch01
+* main
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git diff
+diff --git a/git_useful_commands.txt b/git_useful_commands.txt
+index 80c4176..5f71364 100644
+--- a/git_useful_commands.txt
++++ b/git_useful_commands.txt
+@@ -1,3 +1,30 @@
++.gitignore --> File with exception file list(should not add or commit, like secret/password/API key files)
++git status --> Shows status
++git log --> Shows the log corresponding to a git repo
++git add . --> add all files (modified/new etc) to staging for committing
++git add file1 file2 --> add specific files to staging for committing
++git rm --cached file1 --> remove the added file from staging from staging
++git rm --force file1 --> delete the file permanently
++git commit -m "add files" --> commit the changes to local repo
++git remote add origin https://testrepo.git --> add a remote origin in local repo
++git push -u origin main --> push the changes from local repo to remote repo origin
++git config user.name "Vinuprasad" --> set the git config with user name
++git config user.email "vinuprasad@test.com" --> set the git config with user email
++git config --global user.name "Vinuprasad" --> set the git config with user name globally 
++git config --global user.email "vinuprasad@test.com" --> set the git config with user email globally
++git checkout file1 --> revert changes done to file1 from previously committed
++git clone https://github.com/londonappbrewery/TinDog-Start.git  --> it will clone some one else remote repository clonned in local folder (repo)
++git branch --> show the list of all branches for the git repo and currently active one with *
++git branch branch01 --> Create new branch01
++git checkout branch01 --> Point the branch to branch01
++git checkout main --> Point the branch to main/master
++git branch -D branch_name --> Delete the branch
++git merge branch01 --> merge the changes from branch01 to current branch
++
++fork --> Clone someone's remote repo to our remote repo and make changes in our remote repo. We can also send a pull request to original author to include our changes. 
++                Original author can login to their remote repor and approve or suggest or comment on our changes and if approved changes can be merged in origina autjor's repo.
++
++------------------------------------------------------------------------------------------------------------------
+ --Working Directory --> Staging Area --> Local Reporsitory (local Git repository) --> Remote Repository (Git hub)
+ ------------------------------------------------------------------------------------------------------------------
