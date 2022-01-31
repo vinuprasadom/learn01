@@ -1,3 +1,6 @@
+--Working Directory --> Staging Area --> Local Reporsitory (local Git repository) --> Remote Repository (Git hub)
+------------------------------------------------------------------------------------------------------------------
+
 vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01
 $ ls
 file1.txt  file2.txt  file3.txt
@@ -311,4 +314,122 @@ vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (ma
 $ git checkout file1.txt
 Updated 1 path from the index
 
+
+--git push
+----------------------------------------------------------------
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git log
+commit 659a297518e1fd074b54dfb0e099cdca46cc6f3a (HEAD -> main)
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sun Jan 30 22:17:43 2022 +0530
+
+    test with gitignore and new files file4 - 6
+
+commit 0c935be3337675311ba0496a86150e1155db5fca (origin/main)
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 14:38:38 2022 +0530
+
+    modified file1 with line2 and line3
+
+commit d300fa0cc60c7c6b544715f8b1adb026551aad2b
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 14:17:47 2022 +0530
+
+    Updated file1 with line1update and added file2
+
+commit 1d39fa186b28fa7102ddcdc8f9e46a32d33957bc
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 00:06:33 2022 +0530
+
+    Add file1 with line 1
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git push
+To https://github.com/vinuprasadom/learn01.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/vinuprasadom/learn01.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git push -f
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (14/14), 2.76 KiB | 1.38 MiB/s, done.
+Total 14 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/vinuprasadom/learn01.git
+ + 9efe551...659a297 main -> main (forced update)
+
+--git clone
+-----------------------------------------------------------------------------------------------
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022
+$ mkdir test
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022
+$ cd test/
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/test
+$ ls -a
+.  ..
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/test
+$ git clone https://github.com/londonappbrewery/TinDog-Start.git
+Cloning into 'TinDog-Start'...
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (14/14), done.
+Receiving objects:  34% (10/29)sed 3 (delta 2), pack-reused 13 eceiving objects:  31% (9/29)
+Receiving objects: 100% (29/29), 349.80 KiB | 4.54 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/test
+$ cd TinDog-Start/
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/test/TinDog-Start (master)
+$ ls -a
+.  ..  .git  css  images  index.html  README.md
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/test/TinDog-Start (master)
+$ git log
+commit 121ed17a58f5b266f337600070bdd9dad4f35459 (HEAD -> master, origin/master, origin/HEAD)
+Author: Angela Yu <8798027+angelabauer@users.noreply.github.com>
+Date:   Wed Dec 29 15:40:02 2021 +0000
+
+    Delete .DS_Store
+
+commit d737767740b345a351cd8bec14ec208195fcd15b
+Author: Angela Yu <8798027+angelabauer@users.noreply.github.com>
+Date:   Wed Dec 29 15:39:52 2021 +0000
+
+    Delete .DS_Store
+
+commit 198748611fa83e5aa8893594c5f5efd0fd93184b
+Author: Angela Yu <8798027+angelabauer@users.noreply.github.com>
+Date:   Wed Dec 29 15:39:32 2021 +0000
+
+    Delete .DS_Store
+
+commit 6d2a83bf02661ca23872c1d1e1302a32576060b0
+Author: Angela Yu <8798027+angelabauer@users.noreply.github.com>
+Date:   Wed Dec 29 15:39:10 2021 +0000
+
+    Update index.html
+
+commit 3d7713761ba12a2573268a8d3cb81f27b2320618
+Author: Angela <angela@londonappbrewery.com>
+Date:   Wed Oct 24 18:21:49 2018 +0100
+
+    Add readme
+
+commit 0d5867b843c4a2fdaf0871fc3ff32eea3dac60ff
+Author: Angela <angela@londonappbrewery.com>
+Date:   Wed Oct 24 18:18:43 2018 +0100
+
+    Intial commit
 
