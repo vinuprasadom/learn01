@@ -433,3 +433,261 @@ Date:   Wed Oct 24 18:18:43 2018 +0100
 
     Intial commit
 
+--git merge
+--------------------------------------------------------------------------------------------
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022
+$ cd 18_Git_hub_test_01/
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git log
+commit 659a297518e1fd074b54dfb0e099cdca46cc6f3a (HEAD -> main, origin/main)
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sun Jan 30 22:17:43 2022 +0530
+
+    test with gitignore and new files file4 - 6
+
+commit 0c935be3337675311ba0496a86150e1155db5fca
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 14:38:38 2022 +0530
+
+    modified file1 with line2 and line3
+
+commit d300fa0cc60c7c6b544715f8b1adb026551aad2b
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 14:17:47 2022 +0530
+
+    Updated file1 with line1update and added file2
+
+commit 1d39fa186b28fa7102ddcdc8f9e46a32d33957bc
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 00:06:33 2022 +0530
+
+    Add file1 with line 1
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git branch branch01
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git branch
+  branch01
+* main
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git checkout branch01
+Switched to branch 'branch01'
+M       git_useful_commands.txt
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (branch01)
+$ git branch
+* branch01
+  main
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (branch01)
+$ git commit -m "modified file1 line05 and file02 line01"
+On branch branch01
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+        modified:   file2.txt
+        modified:   git_useful_commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (branch01)
+$ git add .
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (branch01)
+$ git commit -m "modified file1 line05 and file02 line01"
+[branch01 9651398] modified file1 line05 and file02 line01
+ 3 files changed, 124 insertions(+), 1 deletion(-)
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (branch01)
+$ git log
+commit 9651398b94de2402657c662ff69487b12dbe01b6 (HEAD -> branch01)
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Mon Jan 31 12:59:00 2022 +0530
+
+    modified file1 line05 and file02 line01
+
+commit 659a297518e1fd074b54dfb0e099cdca46cc6f3a (origin/main, main)
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sun Jan 30 22:17:43 2022 +0530
+
+    test with gitignore and new files file4 - 6
+
+commit 0c935be3337675311ba0496a86150e1155db5fca
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 14:38:38 2022 +0530
+
+    modified file1 with line2 and line3
+
+commit d300fa0cc60c7c6b544715f8b1adb026551aad2b
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 14:17:47 2022 +0530
+
+    Updated file1 with line1update and added file2
+
+commit 1d39fa186b28fa7102ddcdc8f9e46a32d33957bc
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 00:06:33 2022 +0530
+
+    Add file1 with line 1
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (branch01)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git checkout branch01
+Switched to branch 'branch01'
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (branch01)
+$ git branch
+  branch01
+* main
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git checkout branch01
+Switched to branch 'branch01'
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (branch01)
+$ git checkout branch01
+Already on 'branch01'
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (branch01)
+$ git branch
+* branch01
+  main
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (branch01)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ touch file7.txt
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git add .
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file7.txt
+
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git commit -m "added new file file7"
+[main d044d40] added new file file7
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file7.txt
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git log
+commit d044d4035d9292f8e11e37801107c0c0e32fe11d (HEAD -> main)
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Mon Jan 31 13:03:44 2022 +0530
+
+    added new file file7
+
+commit 659a297518e1fd074b54dfb0e099cdca46cc6f3a (origin/main)
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sun Jan 30 22:17:43 2022 +0530
+
+    test with gitignore and new files file4 - 6
+
+commit 0c935be3337675311ba0496a86150e1155db5fca
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 14:38:38 2022 +0530
+
+    modified file1 with line2 and line3
+
+commit d300fa0cc60c7c6b544715f8b1adb026551aad2b
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 14:17:47 2022 +0530
+
+    Updated file1 with line1update and added file2
+
+commit 1d39fa186b28fa7102ddcdc8f9e46a32d33957bc
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 00:06:33 2022 +0530
+
+    Add file1 with line 1
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git merge branch01
+Merge made by the 'ort' strategy.
+ file1.txt               |   3 +-
+ file2.txt               |   1 +
+ git_useful_commands.txt | 121 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 124 insertions(+), 1 deletion(-)
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git log
+commit 84a100763ebf882457c3cc2d7064be78aa18eb36 (HEAD -> main)
+Merge: d044d40 9651398
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Mon Jan 31 13:07:13 2022 +0530
+
+    Merge branch 'branch01'
+
+commit d044d4035d9292f8e11e37801107c0c0e32fe11d
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Mon Jan 31 13:03:44 2022 +0530
+
+    added new file file7
+
+commit 9651398b94de2402657c662ff69487b12dbe01b6 (branch01)
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Mon Jan 31 12:59:00 2022 +0530
+
+    modified file1 line05 and file02 line01
+
+commit 659a297518e1fd074b54dfb0e099cdca46cc6f3a (origin/main)
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sun Jan 30 22:17:43 2022 +0530
+
+    test with gitignore and new files file4 - 6
+
+commit 0c935be3337675311ba0496a86150e1155db5fca
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 14:38:38 2022 +0530
+
+    modified file1 with line2 and line3
+
+commit d300fa0cc60c7c6b544715f8b1adb026551aad2b
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 14:17:47 2022 +0530
+
+    Updated file1 with line1update and added file2
+
+commit 1d39fa186b28fa7102ddcdc8f9e46a32d33957bc
+Author: Vinuprasad <vinuprasadom@gmail.com>
+Date:   Sat Jan 29 00:06:33 2022 +0530
+
+    Add file1 with line 1
+
+vinup@LAPTOP-ER1MFBDM MINGW64 /d/Work/WebDevelopment_2022/18_Git_hub_test_01 (main)
+$ git push origin main -u
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 2.29 KiB | 2.29 MiB/s, done.
+Total 10 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/vinuprasadom/learn01.git
+   659a297..84a1007  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
